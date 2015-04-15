@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @secchi.sample_time %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @secchi.secchi_depth_ft %>
+</p>
+
+<%= link_to 'Edit', edit_secchi_path(@secchi) %> |
+<%= link_to 'Back', secchis_path %>
