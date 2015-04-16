@@ -11,14 +11,12 @@
 <div id="wrap">
 <div class='container-fluid'>
 
-
-				<ul class="nav nav-pills nav-justified">
-					<li><%=link_to "Home", root_path%></li>
+				<ul class="nav nav-tabs nav-justified">
+					<li class='nav-text'><%=link_to "Home", root_path%></li>
 					<li><%=link_to "Secchi", secchis_path%></li>
 					<li><%=link_to "Chlorophyll", chloros_path%></li>
 					<li><%=link_to "Phosphorus", phosphos_path%></li>
 				</ul>
-
 
 			<%= render 'layouts/flash_notices'%> 
 			
@@ -32,7 +30,8 @@
 		
 </div>
 </div>
-
+<hr/>
+<br/>
 <div id="footer">
 	<div class="container">
 		<p class="muted credit">For Developers: <%=link_to "RESTful API", api_path%></p>

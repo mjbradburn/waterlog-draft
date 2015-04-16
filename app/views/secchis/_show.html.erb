@@ -1,20 +1,27 @@
 <tr>
-  <td class="hiddenRow"><strong><div class="collapse sample<%=secchi.id%>" >Created at:<div></strong></td>
-  <td class="hiddenRow"><div class="collapse sample<%=secchi.id%>" ><%= secchi.created_at.to_s(:long) %></div></td>
+	<td class="hiddenRow"><strong><div class="collapse sample<%=secchi.id%>" >Secchi depth:</div></strong></td>
+
+	<td class="hiddenRow"><div class="collapse sample<%=secchi.id%>" ><%= secchi.secchi_depth_ft %></div></td>
+<tr>
+	<td class="hiddenRow"><strong><div class="collapse sample<%=secchi.id%>" >Weather:</div></strong></td>
+  	<td class="hiddenRow"><div class="collapse sample<%=secchi.id%>" ><%= weather_text(secchi.weather)%></div></td>
+</tr>
+
 </tr>
 
 <tr>
-  <td class="hiddenRow"><strong><div class="collapse sample<%=secchi.id%>" >Updated at:<div></strong></td>
-  <td class="hiddenRow"><div class="collapse sample<%=secchi.id%>" ><%= secchi.updated_at.to_s(:long) %></div></td>
+	<td class="hiddenRow"><strong><div class="collapse sample<%=secchi.id%>" >Comments:</div></strong></td>
+  	<td class="hiddenRow" colspan="3"><div class="collapse sample<%=secchi.id%>" ><%= secchi.comments%></div></td>
 </tr>
 
 <tr>
-  <td class="hiddenRow"><strong><div class="collapse sample<%=secchi.id%>" >Weather:</div></strong></td>
-  <td class="hiddenRow"><div class="collapse sample<%=secchi.id%>" ><%= weather_text(secchi.weather)%></div></td>
+	<td class="hiddenRow"><strong><div class="collapse sample<%=secchi.id%>" >Created at:<div></strong></td>
+  	<td class="hiddenRow" colspan="3"><div class="collapse sample<%=secchi.id%>" ><%= secchi.created_at.to_s(:long) %></div></td>
 </tr>
 
 <tr>
-  <td class="hiddenRow"><strong><div class="collapse sample<%=secchi.id%>" >Comments:</div></strong></td>
-  <td class="hiddenRow"><div class="collapse sample<%=secchi.id%>" ><%= secchi.comments%></div></td>
+	<td class="hiddenRow"><strong><div class="collapse sample<%=secchi.id%>" >Updated at:<div></strong></td>
+  	<td class="hiddenRow" colspan="3"><div class="collapse sample<%=secchi.id%>" ><%= secchi.updated_at.to_s(:long) %></div></td>
 </tr>
+
     

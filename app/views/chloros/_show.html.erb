@@ -1,11 +1,11 @@
 <tr>
   <td class="hiddenRow"><strong><div class="collapse sample<%=chloro.id%>" >Created at:<div></strong></td>
-  <td class="hiddenRow"><div class="collapse sample<%=chloro.id%>" ><%= chloro.created_at.to_s(:long) %></div></td>
+  <td class="hiddenRow" colspan="3"><div class="collapse sample<%=chloro.id%>" ><%= chloro.created_at.to_s(:long) %></div></td>
 </tr>
 
 <tr>
   <td class="hiddenRow"><strong><div class="collapse sample<%=chloro.id%>" >Updated at:<div></strong></td>
-  <td class="hiddenRow"><div class="collapse sample<%=chloro.id%>" ><%= chloro.updated_at.to_s(:long) %></div></td>
+  <td class="hiddenRow" colspan="3"><div class="collapse sample<%=chloro.id%>" ><%= chloro.updated_at.to_s(:long) %></div></td>
 </tr>
 
 <tr>
@@ -30,6 +30,6 @@
 
 <tr>
   <td class="hiddenRow"><strong><div class="collapse sample<%=chloro.id%>" >Linked to Secchi:</div></strong></td>
-  <td class="hiddenRow"><div class="collapse sample<%=chloro.id%>" ><%= SecchiDepth.find(chloro.secchi_depth_id).sample_time.to_s(:long)%></div></td>
+  <td class="hiddenRow" colspan="3"><div class="collapse sample<%=chloro.id%>" ><%= Secchi.find(chloro.secchi_id).sample_time.to_s(:long)%></div></td>
 </tr>
 

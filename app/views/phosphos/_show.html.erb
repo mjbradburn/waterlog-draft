@@ -23,3 +23,12 @@
   <td class="hiddenRow"><div class="collapse sample<%=phospho.id%>" ><%= season_text(phospho.season) %></div></td>
 </tr>
     
+<tr>
+  <td class="hiddenRow"><strong><div class="collapse sample<%=phospho.id%>" >Ice Out:</div></strong></td>
+  <td class="hiddenRow"><div class="collapse sample<%=phospho.id%>" ><%= phospho.ice_out.to_s(:long)%></div></td>
+</tr>
+
+<tr>
+  <td class="hiddenRow"><strong><div class="collapse sample<%=phospho.id%>" >Sample Submitted:</div></strong></td>
+  <td class="hiddenRow"><div class="collapse sample<%=phospho.id%>" ><%= phospho.sample_submit.to_s(:long)%></div></td>
+</tr>
