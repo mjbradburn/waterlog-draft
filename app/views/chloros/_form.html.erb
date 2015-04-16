@@ -1,4 +1,4 @@
-<%= form_for(@chloro, remote: true) do |f| %>
+<%= form_for(@chloro, remote: true ) do |f| %>
   
   <div class="field">
     <%= f.label :lake_id %><br>
@@ -18,11 +18,12 @@
     <%= f.text_field :comp_sample_depth%>
   </div>
 
+
+
   <div class="field">
     <%= f.label :secchi_id, "Linked to Secchi" %><br>
     <%= f.select :secchi_id, options_for_select(Secchi.where(lake_id: params[:lake_id]).collect {|s| ["#{Lake.find(params[:lake_id]).lkname } on  #{s.sample_time.to_s(:long)}", s.id]}, selected: (Secchi.where(lake_id: params[:lake_id]).last.id)),{} %>
   </div>
-
 
   <div class="field">
     <%= f.label :weather %><br>
@@ -36,4 +37,6 @@
     <%= f.submit class: 'btn btn-primary'%>
     <%= link_to 'Cancel', :back, :class=>'btn btn-default' %>
   </div>
+
+  <%= params.inspect %>
 <% end %>

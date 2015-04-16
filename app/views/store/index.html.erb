@@ -18,15 +18,15 @@
       <tr>
         <td>
         <div class="btn-group-vertical">
-          <%= link_to('Secchi', {:action => 'new', :controller =>'secchis', :lake_id => lake.id}, class: 'btn btn-default', remote: true) %>
+          <%= link_to('Secchi', {:action => 'new', :controller =>'secchis', :lake_id => lake.id}, class: 'btn btn-info', remote: true) %>
         
 
         
-          <%= link_to('Chlorophyll', {:action => 'new', :controller =>'chloros', :lake_id => lake.id}, class: 'btn btn-default', remote: true) %>
+          <%= link_to('Chlorophyll', {:action => 'new', :controller =>'chloros', :lake_id => lake.id}, class: 'btn btn-primary', remote: true) %>
         
 
         
-          <%= link_to('Phosphorus', {:action => 'new', :controller =>'phosphos', :lake_id => lake.id}, class: 'btn btn-default', remote: true) %>
+          <%= link_to('Phosphorus', {:action => 'new', :controller =>'phosphos', :lake_id => lake.id}, class: 'btn btn-info', remote: true) %>
           </div></td>
 
           <td><%= lake.lkname %></td>

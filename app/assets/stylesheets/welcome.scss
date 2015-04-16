@@ -1,0 +1,37 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.welcome {
+
+	//body { 
+		background: url('MiCorps-logo.jpg');
+		background-size: 100%;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		color: white;
+	//}
+
+	.container{
+		width: 350px;
+		margin: 100px auto;
+		padding: 20px;
+		background: #BAE4CB;
+		border-radius: 40px;
+		border-color: black;
+		text-align: center;
+		color: #3F7CAC;
+		align-horizontal: center;
+		align-vertical: center;
+	}
+
+	.btn {
+		background: #95AFBA;
+      -webkit-border-radius: 19;
+      -moz-border-radius: 19;
+      border-radius: 19px;
+      padding: 5px 20px 5px 20px;
+      text-decoration: none;
+	}
+
+}
